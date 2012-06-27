@@ -11,9 +11,10 @@ function print_r(expression, indent, done)
 		local pairs, type, print, tostring, rep, len = pairs, type, print, tostring, string.rep, string.len
 		done = done or {}
 		indent = indent or ''
+		local nextIndent
 		for key, value in pairs(expression) do
 			if type(value) == "table" and not done[value] then
-				local nextIndent = nextIndent or (indent..rep(' ',len(tostring(key))+2))
+				nextIndent = nextIndent or (indent..rep(' ',len(tostring(key))+2))
 				done[value] = true
 				print(indent.."["..tostring(key).."] => Table {")
 				print_r(value, nextIndent..rep(' ',2), done)
