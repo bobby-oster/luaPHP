@@ -5,7 +5,7 @@ luaPHP is a collection of PHP function implementations done in pure Lua with the
 
 License
 -------
-luaPHP is free open source software and uses the MIT License.  You can read more about he license in the included copy: LICENSE.txt
+luaPHP is free open source software and uses the MIT License.  You can read more about the license in the included copy: LICENSE.txt
 
 Function Reference
 ------------------
